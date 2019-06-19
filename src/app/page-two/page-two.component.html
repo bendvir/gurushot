@@ -1,0 +1,21 @@
+<div class="page-two-wrapper page-wrapper">
+  <div class="pics">
+    <div class="pic-wrapper" [ngClass]="{'diaplayPicAnim': currentPage==2}" *ngFor="let pic of picsList; let i = index"
+      [style.backgroundImage]="'url(../../assets/'+ pic +')'">
+      <div class="pic-logo"
+        [ngClass]="{'logoAnim': currentPage==2, 'logoAnimDel1': i===1, 'logoAnimDel3': i===3,'logoAnimDel8': i===8}"
+        *ngIf="i===1|| i===3 || i===8"></div>
+    </div>
+  </div>
+  <div class="text">
+    <h1>some title </h1>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada sit amet tortor eu dictum. Donec ut felis
+      et arcu gravida pulvinar. Sed tincidunt tellus ultrices convallis mollis. Morbi non erat quis metus luctus
+      scelerisque eget vitae ante. Fusce tincidunt orci in ligula congue, ut tempus erat egestas. Vivamus varius tellus
+      eu turpis rhoncus, ac pretium leo finibus. Aenean consectetur orci non dui dictum ultricies. Nulla facilisi. Ut
+      suscipit risus non nibh finibus, at tempor nisl fringilla. Donec sed placerat tortor.
+
+    </div>
+  </div>
+</div>
